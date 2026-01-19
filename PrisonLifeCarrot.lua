@@ -1,7 +1,7 @@
 --[[
 	Prison Life Open Source
 	Script Discord @lil_jcarrot
-	Version 0.6-V2
+	Version 0.7-V2
 ]]--
 
 
@@ -35,7 +35,7 @@ end
 -- // *======*   Local Text   *======* \\ --
 --[=====================================================]--
 -- // Version Script \\ --
-local VersionScript = "0.6-V2 - Open Source"
+local VersionScript = "0.7-V2 - Open Source"
 -- // Other Local Taxt \\ --
 local TitleText = "" .. gradient("Carrot Client", Color3.fromHex("#6F42F5"), Color3.fromHex("#F54275"))
 local PatchScript = "" .. gradient("We are fixing it. Please wait a moment", Color3.fromHex("#BDC3C7"), Color3.fromHex("#2C3E50"))
@@ -62,12 +62,12 @@ if _G.PopupStart == true then
             			Callback = function() end,
             			Variant = "Secondary", -- // Primary, Secondary, Tertiary
         		},
-			{
-				Title = "" .. gradient("Premium Mode", Color3.fromHex("#0FFCCD"), Color3.fromHex("#0F37FC")),
-				Icon = "gem",
-				Callback = function() Confirmed = true PremiumMode = true end,
-				Variant = "Tertiary",
-			}
+				{
+					Title = "" .. gradient("Premium Mode", Color3.fromHex("#0FFCCD"), Color3.fromHex("#0F37FC")),
+					Icon = "gem",
+					Callback = function() Confirmed = true PremiumMode = true end,
+					Variant = "Tertiary",
+				}
     		}
 	})
 	repeat wait() until Confirmed
@@ -123,11 +123,11 @@ local Tabs = {}
 -- // *======*   Updatelog Popup   *======* \\ --
 --[=====================================================]--
 -- // *======*   Config Updatelog Popup   *======* \\ --
-local updatelog = false
+local updatelog = true
 -- // *======*   Script Load Popup   *======* \\ --
 if updatelog == true then
-	local UpDateTitle = "" .. gradient("Carrot | UpdateLog    " .. VersionScript, Color3.fromHex("#6F42F5"), Color3.fromHex("#F54275"))
-	local UpDateContent = "ESP\n  [+] ESP Items\n\nAuto Edit Gun\n  [/] Fix MP5 FireRate ( Safe )\n\nScript By @el_e95 ( Developer )"
+	local UpDateTitle = "" .. gradient("Carrot | UpdateLog  " .. VersionScript, Color3.fromHex("#6F42F5"), Color3.fromHex("#F54275"))
+	local UpDateContent = "LocalPlayer Section\n  [+] Add Reset Character\n\nScript By @li1_Carr0t ( Developer )"
 	WindUI:Popup({ Title = "" .. UpDateTitle, Icon = "rbxassetid://5410949701", IconThemed = true, Content = "" .. UpDateContent, Buttons = {{ Title = "🥕", Callback = function() end, Variant = "Primary", }} })
 end
 -- // *======*   Set Tab Info   *======* \\ --
@@ -166,6 +166,7 @@ local plr = Players.LocalPlayer
 -- // *======*   Local Function LocalPlayer   *======* \\ --
 local SitHere
 local SetFov
+local ResetChar
 -- // *======*   Config LocalPlayer   *======* \\ --
 _G.WalkSpeedLoop = false
 _G.JumpPowerHack = false
@@ -234,6 +235,12 @@ Tabs.LocalPlayer:Toggle({
 	Locked = false,
 	Callback = function(Value)
 		_G.AntiJump = Value
+	end
+})
+Tabs.LocalPlayer:Button({
+	Title = "Reset Character",
+	Callback = function ()
+		ResetChar()
 	end
 })
 -- // *======*   Script LocalPlayer   *======* \\ --
@@ -329,6 +336,9 @@ spawn(function()
 		end
 	end
 end)
+ResetChar = function()
+	LocalPlayer.Character.Humanoid.Health = 0
+end
 --[=====================================================]--
 -- // *======*   ESP   *======* \\ --
 --[=====================================================]--
