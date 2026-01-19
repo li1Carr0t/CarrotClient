@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://github.com/yourname/yourrepo">
+  <a href="[https://github.com/yourname/yourrepo](https://github.com/MeteorX-client/CarrotClient/blob/main/Logo.png)">
     <img src="https://raw.githubusercontent.com/yourname/yourrepo/main/.github/logo.png" alt="Logo" width="120" height="120">
   </a>
 </p>
