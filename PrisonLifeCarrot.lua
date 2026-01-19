@@ -1,3 +1,10 @@
+--[[
+	Prison Life Open Source
+	Script Discord @lil_jcarrot
+	Version 0.6-V2
+]]--
+
+
 
 --[=====================================================]--
 -- // *======*   Setup Script   *======* \\ --
@@ -28,7 +35,7 @@ end
 -- // *======*   Local Text   *======* \\ --
 --[=====================================================]--
 -- // Version Script \\ --
-local VersionScript = "0.6-V2 Tester"
+local VersionScript = "0.6-V2 - Open Source"
 -- // Other Local Taxt \\ --
 local TitleText = "" .. gradient("Carrot Client", Color3.fromHex("#6F42F5"), Color3.fromHex("#F54275"))
 local PatchScript = "" .. gradient("We are fixing it. Please wait a moment", Color3.fromHex("#BDC3C7"), Color3.fromHex("#2C3E50"))
@@ -66,39 +73,13 @@ if _G.PopupStart == true then
 	repeat wait() until Confirmed
 end
 --[=====================================================]--
--- // *======*   Check Anthor   *======* \\ --
---[=====================================================]--
--- // Author \\ --
-local NormalAuthor = "Prison Life | Version " .. gradient("(Free)", Color3.fromHex("#FFFFFF"), Color3.fromHex("#ADADAD"))
-local PremiumAuthor = "Prison Life | Version " .. gradient("( V2 )", Color3.fromHex("#F58A42"), Color3.fromHex("#C2F542"))
-local DevAuthor = "Prison Life | Version " .. gradient("(Developer)", Color3.fromHex("#0FFCCD"), Color3.fromHex("#0F37FC"))
--- // Premission Set \\ --
-local AuthorCheck = ""
-local KeyDevMode = {}
--- // Check Premission \\ --
-if PremiumMode == false then
-	print("Premium Mode False 🔻")
-	AuthorCheck = "" .. NormalAuthor .. ""
-	KeyDevMode = {
-		"NormalKey", 
-		"1"
-	}
-elseif PremiumMode == true then
-	print("Premium Mode True ⭐️")
-	AuthorCheck = "" .. PremiumAuthor .. ""
-	KeyDevMode = {
-		"PremiumKey",
-		"1"
-	}
-end
---[=====================================================]--
 -- // *======*   Window Setting + KeySystem   *======* \\ --
 --[=====================================================]--
 local Window = CarrotUI:CreateWindow({
 	Title = "" .. gradient("Carrot Client", Color3.fromHex("#6F42F5"), Color3.fromHex("#F54275")) .. "  🥕   |   " .. gradient("Anime Theme", Color3.fromHex("#C9FFBF"), Color3.fromHex("#FFAFBD")),
 	Icon = "rbxassetid://5410949701",
     	IconThemed = true,
-	Author = "Prison Life  " .. gradient("( Premium )", Color3.fromHex("#F58A42"), Color3.fromHex("#C2F542")),
+	Author = "Prison Life  " .. gradient("( Premium )", Color3.fromHex("#E813E4"), Color3.fromHex("#02FADD")),
     	Folder = "jcarot1_config",
     	Size = UDim2.fromOffset(600, 500),
     	Transparent = true,
@@ -107,12 +88,6 @@ local Window = CarrotUI:CreateWindow({
     	SideBarWidth = 200,
     	ScrollBarEnabled = true,
 	Background = "rbxassetid://17778654821",
-    	KeySystem = {
-        	Key = KeyDevMode,
-        	Note = "Welcome " .. gradient("Carrot Loader", Color3.fromHex("#6F42F5"), Color3.fromHex("#F54275")) .. " Key System \n\nJoin Discord For Free Daily Key \nFree Key Status : " .. gradient("Activate", Color3.fromHex("#B8FF91"), Color3.fromHex("#07FA5C")) .. "\nMap : Prison Life",
-		URL = "https://discord.gg/5WukHnv6",
-        	SaveKey = false,
-    	},
 })
 --[=====================================================]--
 -- // *======*   Edit Toggle Ui   *======* \\ --
