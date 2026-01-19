@@ -70,10 +70,3 @@
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MeteorX-client/CarrotClient/refs/heads/main/PrisonLifeCarrot.lua"))()
-
-# Install dependencies
-pnpm install
-
-# Environment variables
-cp .env.example .env
-# Edit .env with your secrets
