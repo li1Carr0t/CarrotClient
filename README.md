@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<h1 align="center">🚀 Carrot Client</h1>
+<h1 align="center">🚀 Carrot Client 🥕</h1>
 <p align="center">
   A short, punchy tagline that says what your project does.
   <br />
