@@ -26,7 +26,7 @@
 
 ## Projects
 
-- **Prison Life:** Version 0.7-V2
+- **Prison Life:** Version 0.7.2-V2
 
 ---
 
