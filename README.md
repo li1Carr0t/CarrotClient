@@ -12,11 +12,7 @@
   <a href="https://yourproject.example.com"><strong>Explore the docs »</strong></a>
   <br />
   <br />
-  <a href="https://github.com/yourname/yourrepo">View Demo</a>
-  ·
-  <a href="https://github.com/yourname/yourrepo/issues">Report Bug</a>
-  ·
-  <a href="https://github.com/yourname/yourrepo/issues">Request Feature</a>
+  <a href="https://discord.gg/4ePkk9JfHR">Discord</a>
 </p>
 
 <p align="center">
