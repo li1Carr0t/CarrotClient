@@ -2,13 +2,6 @@ if game.CoreGui:FindFirstChild("PepsiUi") then
     game.CoreGui:FindFirstChild("PepsiUi"):Destroy()
 end
 
-local function RainbowMode()
-	game:GetService("RunService").RenderStepped:Connect(function()
-		return Color3.fromHSV((tick() % 5) / 5, 1, 1)
-	end)
-end
-
-
 local library = {
 	WorkspaceName = "Yuri Hub",
 	flags = {},
@@ -5716,9 +5709,9 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://107584891022178",
+			Placeholder = "rbxassetid://17778654821",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://107584891022178",
+			Value = "rbxassetid://117778654821",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
