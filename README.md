@@ -9,7 +9,7 @@
 
 ## Owner Client
 
-- **Discord @li1_carr0t**
+- **Discord @li1_carr0t & @el_e95**
 - [**Join Discord**](https://discord.gg/4ePkk9JfHR)
 
 ---
