@@ -11,7 +11,7 @@
 
 - **Owner Script @li1_carr0t**
 - **Developer/Scripter @el_e95**
-- [**Join Discord**](https://discord.gg/4ePkk9JfHR)
+- [**Join Carrot Client Discord**](https://discord.gg/4ePkk9JfHR)
 
 - [**Footagesus**](https://github.com/Footagesus/WindUI) (Wind UI)
 
