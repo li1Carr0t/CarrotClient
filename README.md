@@ -33,5 +33,6 @@
 ### Get Script
 
 - [PrisonLife Xeno](https://xenoscripts.com/script/prison-life-script-carrot-client-0-6-v2)
+- [PrisonLife ScriptBlox](https://scriptblox.com/script/Prison-Life-Carrot-Client-103313)
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/li1Carr0t/CarrotClient/refs/heads/main/PrisonLifeCarrot.lua"))()
